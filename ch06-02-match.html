@@ -447,9 +447,10 @@ special pattern <code>_</code> instead:</p>
 </span></code></pre></pre>
 <p>The <code>_</code> pattern will match any value. By putting it after our other arms, the
 <code>_</code> will match all the possible cases that aren’t specified before it. The <code>()</code>
-is just the unit value, so nothing will happen in the <code>_</code> case. As a result, we
-can say that we want to do nothing for all the possible values that we don’t
-list before the <code>_</code> placeholder.</p>
+is just the unit value (the empty tuple type we mentioned in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple
+Type”</a><!-- ignore --> section), so nothing will happen in the <code>_</code> case.
+As a result, we can say that we want to do nothing for all the possible values
+that we don’t list before the <code>_</code> placeholder.</p>
 <p>However, the <code>match</code> expression can be a bit wordy in a situation in which we
 care about only <em>one</em> of the cases. For this situation, Rust provides <code>if let</code>.</p>
 <p>More about patterns and matching can be found in <a href="ch18-00-patterns.html">chapter 18</a>.</p>

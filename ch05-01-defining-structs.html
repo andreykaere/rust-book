@@ -149,11 +149,12 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="defining-and-instantiating-structs"><a class="header" href="#defining-and-instantiating-structs">Defining and Instantiating Structs</a></h2>
-<p>Structs are similar to tuples, which were discussed in Chapter 3. Like tuples,
-the pieces of a struct can be different types. Unlike with tuples, you’ll name
-each piece of data so it’s clear what the values mean. As a result of these
-names, structs are more flexible than tuples: you don’t have to rely on the
-order of the data to specify or access the values of an instance.</p>
+<p>Structs are similar to tuples, which were discussed in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple
+Type”</a><!-- ignore --> section. Like tuples, the pieces of a struct can
+be different types. Unlike with tuples, you’ll name each piece of data so it’s
+clear what the values mean. As a result of these names, structs are more
+flexible than tuples: you don’t have to rely on the order of the data to
+specify or access the values of an instance.</p>
 <p>To define a struct, we enter the keyword <code>struct</code> and name the entire struct. A
 struct’s name should describe the significance of the pieces of data being
 grouped together. Then, inside curly brackets, we define the names and types of
@@ -382,10 +383,11 @@ individual pieces, you can use a <code>.</code> followed by the index to access 
 individual value, and so on.</p>
 <h3 id="unit-like-structs-without-any-fields"><a class="header" href="#unit-like-structs-without-any-fields">Unit-Like Structs Without Any Fields</a></h3>
 <p>You can also define structs that don’t have any fields! These are called
-<em>unit-like structs</em> because they behave similarly to <code>()</code>, the unit type.
-Unit-like structs can be useful in situations in which you need to implement a
-trait on some type but don’t have any data that you want to store in the type
-itself. We’ll discuss traits in Chapter 10.</p>
+<em>unit-like structs</em> because they behave similarly to <code>()</code>, the unit type that
+we mentioned in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> section. Unit-like
+structs can be useful in situations in which you need to implement a trait on
+some type but don’t have any data that you want to store in the type itself.
+We’ll discuss traits in Chapter 10.</p>
 <blockquote>
 <h3 id="ownership-of-struct-data"><a class="header" href="#ownership-of-struct-data">Ownership of Struct Data</a></h3>
 <p>In the <code>User</code> struct definition in Listing 5-1, we used the owned <code>String</code>

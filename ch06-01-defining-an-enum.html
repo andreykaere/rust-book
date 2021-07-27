@@ -352,7 +352,7 @@ different amounts and types of values</span></p>
 <p>This enum has four variants with different types:</p>
 <ul>
 <li><code>Quit</code> has no data associated with it at all.</li>
-<li><code>Move</code> includes an anonymous struct inside it.</li>
+<li><code>Move</code> has named fields like a struct does.</li>
 <li><code>Write</code> includes a single <code>String</code>.</li>
 <li><code>ChangeColor</code> includes three <code>i32</code> values.</li>
 </ul>
@@ -442,8 +442,8 @@ as follows:</p>
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>enum Option&lt;T&gt; {
-    Some(T),
     None,
+    Some(T),
 }
 <span class="boring">}
 </span></code></pre></pre>
